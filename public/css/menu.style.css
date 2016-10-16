@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2016, 1:46:16 AM
+    Author     : Bogdana
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans|Raleway:100,200,300,400,500,600');
+
+.menu { 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0%;
+    width: 20%;
+    height: 100%;
+    /*background: url('../../storage/app/images/overlay.png');*/
+    background-color: #0b0b0b;
+    /*-moz-box-shadow: 2px 0px 10px 2px #000000;
+    -webkit-box-shadow: 2px 0px 10px 2px #000000;
+    box-shadow: 2px 0px 10px 2px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 2, direction = 90, color = '#000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 2, Direction = 90, Color = '#000000')";
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 75);
+    filter: alpha(opacity = 75);    */
+}
+
+.menu-logo {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-logo-link {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 60%;
+    z-index: 9998;
+}
+
+.menu-logo-link:hover {
+    cursor: pointer;
+}
+
+.menu-logo-img {
+    position: relative;
+    -webkit-transition: transform 400ms ease-in 10ms;
+    -moz-transition: transform 400ms ease-in 10ms;
+    -o-transition: transform 400ms ease-in 10ms;
+    transition: transform 400ms ease-in 10ms;
+}
+
+.menu-logo-link:hover + .logo-img {
+  -webkit-transform: scale(0.9);
+   transform: scale(0.9);  
+}
+

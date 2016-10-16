@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2016, 1:46:16 AM
+    Author     : Bogdana
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans|Raleway:100,200,300,400,500,600');
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../../storage/app/images/logo.black.gif) center no-repeat #fff;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+}
+
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-link {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 60%;
+    z-index: 9998;
+}
+
+.logo-link:hover {
+    cursor: pointer;
+}
+
+.logo-img {
+    position: relative;
+    -webkit-transition: transform 400ms ease-in 10ms;
+    -moz-transition: transform 400ms ease-in 10ms;
+    -o-transition: transform 400ms ease-in 10ms;
+    transition: transform 400ms ease-in 10ms;
+}
+
+.logo-link:hover + .logo-img {
+  -webkit-transform: scale(0.9);
+   transform: scale(0.9);  
+}
+
+.logo-enter {
+    display: none;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Lato, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+
+
+
